@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/black"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Title of Lorem Ipsum"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_image" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_lorem_ipsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ligula rhoncus, congue lectus eu, volutpat orci. Nulla facilisi. Etiam molestie efficitur nibh, euismod sollicitudin ligula sagittis porta. Mauris nec enim tincidunt, ultrices lorem quis, fermentum nisl. Aliquam ultrices interdum lorem. Phasellus mauris erat, tristique ac ornare sit amet, fermentum mollis massa. Suspendisse gravida tincidunt turpis, eu auctor tortor posuere et. Nullam consectetur placerat porttitor. Nam auctor pretium ipsum eu porttitor. Proin eget bibendum dolor. Donec mattis eros at faucibus ornare.
+In hac habitasse platea dictumst. Aenean mauris ligula, tempor in lectus sed, condimentum sagittis lacus. Morbi nec placerat justo. Ut ac porta mi. Vestibulum sed semper orci, fringilla laoreet felis. Mauris feugiat enim in neque consectetur varius. Nullam vulputate ligula quis auctor hendrerit. Quisque tristique pellentesque odio, hendrerit bibendum nisi tempus at. Aliquam sed aliquam ante, nec tincidunt lorem.
+Aliquam placerat eros a diam venenatis posuere. Vivamus convallis gravida hendrerit. Fusce rutrum at mi eget vestibulum. Vestibulum commodo ipsum mi, ut porttitor ex egestas eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a fermentum diam, in semper lectus. Suspendisse tristique, lacus eu imperdiet tincidunt, dui ipsum euismod libero, rutrum egestas lacus dui at ligula. Fusce mi sapien, auctor vel risus ut, ullamcorper iaculis ante. Quisque vel euismod lorem, id bibendum est. Aliquam sapien nibh, convallis sit amet odio viverra, efficitur convallis diam. Nullam semper, lectus tempus auctor laoreet, risus felis pharetra nunc, a elementum eros lacus at dui. Ut consequat nisl orci, vitae feugiat dui sollicitudin a. Aliquam fringilla magna ligula, vitae hendrerit purus venenatis eget. Pellentesque commodo leo sed vestibulum pulvinar."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
